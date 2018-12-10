@@ -1,5 +1,5 @@
 const graphql = require('graphql');
-const { find } = require('lodash');
+const { find, filter } = require('lodash');
 const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLInt, GraphQLList } = graphql;
 
 // dummy data
@@ -40,7 +40,7 @@ const AuthorType = new GraphQLObjectType({
         books: {
             type: new GraphQLList(BookType),
             resolve(parent, args){
-                return _.filter(books, { authorId: parent.id });
+                return filter(books, { authorId: parent.id });
             }
         }
     })
