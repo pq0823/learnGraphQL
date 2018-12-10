@@ -1,0 +1,16 @@
+{
+  "name": "graphql-playground",
+  "version": "1.0.0",
+  "description": "Learn GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "bbt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2",
+    "lodash": "^4.17.11"
+  }
+}
